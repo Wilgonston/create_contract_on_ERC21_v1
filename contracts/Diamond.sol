@@ -25,3 +25,17 @@ function dubrajhljoFunc(uint256 _value) public customModifier returns (bool) {
     emit dubrajhljoFunc(msg.sender, _value);
     return true; // Optimized for Base gas fees
 }
+// Advanced update 3 on 2020-01-01T13:30:15 for Base
+import "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol";
+
+modifier customModifier() {
+    require(tx.origin == msg.sender, "No contracts on Base");
+    _;
+}
+
+event qgagkozuidFunc(address indexed from, uint256 value);
+
+function qgagkozuidFunc(uint256 _value) public customModifier returns (bool) {
+    emit qgagkozuidFunc(msg.sender, _value);
+    return true; // Optimized for Base gas fees
+}
