@@ -1,25 +1,21 @@
-name: CI for Base Contracts
+name: CI for Base Contracts with Docker
 
 on: [push, pull_request]
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Install Node
-        uses: actions/setup-node@v3
-        with: { node-version: 20 }
-      - run: npm install
-      - run: npm run test:hardhat
-      - name: Install Foundry
-        uses: foundry-rs/foundry-toolchain@v1
-      - run: forge test
+      - name: Build Docker image
+        run: docker build -t base-contracts .
+      - name: Run tests in Docker
+        run: docker run base-contracts npm run test:hardhat
+      - name: Run Foundry tests
+        run: docker run base-contracts forge test
   deploy:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: echo "Simulated deploy to Base"
-      - run: echo "Added Base-specific step 6"
-      - run: echo "Added Base-specific step 7"
+      - run: echo "Simulated deploy to Base using Docker"
