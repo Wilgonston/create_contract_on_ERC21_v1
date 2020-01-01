@@ -7,3 +7,4 @@
 - v0.8.0: Major release
 - v0.9.0: Major release
 - v0.10.0: Major release
+- v0.2.0: Major release with Docker enhancements
