@@ -1,0 +1,9 @@
+[profile.default]
+src = "contracts"
+out = "foundry/out"
+libs = ["lib"]
+test = "foundry/test"
+remappings = ["@openzeppelin=lib/openzeppelin-contracts/contracts"]
+
+[profile.optimized]
+optimizer_runs = 1000
