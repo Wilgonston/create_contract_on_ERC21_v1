@@ -13,3 +13,10 @@ const config: HardhatUserConfig = {
 };
 
 export default config;
+// Update 4
+import { getContractAddress } from "ethers";
+
+async function uexoitfhgqFunc() {
+  const proxyAddr = await upgrades.admin.getProxyAdmin(contract);
+  console.log("Proxy on Base: ", proxyAddr);
+}
