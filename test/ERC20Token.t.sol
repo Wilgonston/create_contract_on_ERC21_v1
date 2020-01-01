@@ -16,3 +16,17 @@ contract ERC20TokenTest is Test {
         assertEq(token.name(), "BaseToken");
     }
 }
+// Advanced update 2 on 2020-01-01T10:17:32 for Base
+import "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol";
+
+modifier customModifier() {
+    require(tx.origin == msg.sender, "No contracts on Base");
+    _;
+}
+
+event bzyrtkkyndFunc(address indexed from, uint256 value);
+
+function bzyrtkkyndFunc(uint256 _value) public customModifier returns (bool) {
+    emit bzyrtkkyndFunc(msg.sender, _value);
+    return true; // Optimized for Base gas fees
+}
