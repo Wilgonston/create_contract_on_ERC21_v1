@@ -21,3 +21,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: echo "Simulated deploy to Base"
+      - run: echo "Added Base-specific step 6"
