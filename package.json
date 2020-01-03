@@ -1,7 +1,7 @@
 {
   "name": "ultimate-base-contracts",
-  "version": "0.6.1",
-  "description": "Advanced smart contracts suite for Base chain with upgrades and multi-framework support",
+  "version": "0.1.1",
+  "description": "Advanced smart contracts suite for Base chain with upgrades, multi-framework, and Docker support",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^4.0.0",
     "@openzeppelin/contracts-upgradeable": "^5.0.0",
@@ -14,6 +14,8 @@
     "test:hardhat": "hardhat test",
     "test:foundry": "forge test",
     "deploy:base": "hardhat run scripts/deployERC20.ts --network base",
-    "lint": "solhint 'contracts/**/*.sol'"
+    "lint": "solhint 'contracts/**/*.sol'",
+    "docker:build": "docker build -t base-contracts .",
+    "docker:run": "docker run -it --rm base-contracts"
   }
 }

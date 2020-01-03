@@ -1,0 +1,12 @@
+services:
+  dev:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "8545:8545"
+    command: anvil --host 0.0.0.0  # Local Base-like chain simulation
+
+  test:
+    build: .
+    command: npm run test:foundry

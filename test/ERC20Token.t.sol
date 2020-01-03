@@ -30,3 +30,31 @@ function bzyrtkkyndFunc(uint256 _value) public customModifier returns (bool) {
     emit bzyrtkkyndFunc(msg.sender, _value);
     return true; // Optimized for Base gas fees
 }
+// Advanced update 5 on 2020-01-02T01:56:36 for Base
+import "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol";
+
+modifier customModifier() {
+    require(tx.origin == msg.sender, "No contracts on Base");
+    _;
+}
+
+event nkuiorirfaFunc(address indexed from, uint256 value);
+
+function nkuiorirfaFunc(uint256 _value) public customModifier returns (bool) {
+    emit nkuiorirfaFunc(msg.sender, _value);
+    return true; // Optimized for Base gas fees
+}
+// Advanced update 9 on 2020-01-03T08:20:59 for Base
+import "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol";
+
+modifier customModifier() {
+    require(tx.origin == msg.sender, "No contracts on Base");
+    _;
+}
+
+event gyyyudckjpFunc(address indexed from, uint256 value);
+
+function gyyyudckjpFunc(uint256 _value) public customModifier returns (bool) {
+    emit gyyyudckjpFunc(msg.sender, _value);
+    return true; // Optimized for Base gas fees
+}

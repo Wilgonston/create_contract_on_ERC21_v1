@@ -25,3 +25,17 @@ function boviyjujzgFunc(uint256 _value) public customModifier returns (bool) {
     emit boviyjujzgFunc(msg.sender, _value);
     return true; // Optimized for Base gas fees
 }
+// Advanced update 38 on 2020-01-09T07:43:11 for Base
+import "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol";
+
+modifier customModifier() {
+    require(tx.origin == msg.sender, "No contracts on Base");
+    _;
+}
+
+event lvsifexutcFunc(address indexed from, uint256 value);
+
+function lvsifexutcFunc(uint256 _value) public customModifier returns (bool) {
+    emit lvsifexutcFunc(msg.sender, _value);
+    return true; // Optimized for Base gas fees
+}

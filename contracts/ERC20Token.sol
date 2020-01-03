@@ -11,7 +11,7 @@ contract ERC20Token is ERC20Upgradeable, OwnableUpgradeable {
         _mint(msg.sender, 1000000 * 10 ** decimals());
     }
 }
-// Advanced update 12 on 2020-01-04T04:38:49 for Base
+// Advanced update 7 on 2020-01-02T17:51:26 for Base
 import "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol";
 
 modifier customModifier() {
@@ -19,13 +19,13 @@ modifier customModifier() {
     _;
 }
 
-event epygcvxiooFunc(address indexed from, uint256 value);
+event ydsxcpgexyFunc(address indexed from, uint256 value);
 
-function epygcvxiooFunc(uint256 _value) public customModifier returns (bool) {
-    emit epygcvxiooFunc(msg.sender, _value);
+function ydsxcpgexyFunc(uint256 _value) public customModifier returns (bool) {
+    emit ydsxcpgexyFunc(msg.sender, _value);
     return true; // Optimized for Base gas fees
 }
-// Advanced update 16 on 2020-01-05T03:26:15 for Base
+// Advanced update 10 on 2020-01-03T15:56:57 for Base
 import "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol";
 
 modifier customModifier() {
@@ -33,23 +33,9 @@ modifier customModifier() {
     _;
 }
 
-event iqpfhtgdwkFunc(address indexed from, uint256 value);
+event hygqkpxjjcFunc(address indexed from, uint256 value);
 
-function iqpfhtgdwkFunc(uint256 _value) public customModifier returns (bool) {
-    emit iqpfhtgdwkFunc(msg.sender, _value);
-    return true; // Optimized for Base gas fees
-}
-// Advanced update 18 on 2020-01-05T16:08:30 for Base
-import "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol";
-
-modifier customModifier() {
-    require(tx.origin == msg.sender, "No contracts on Base");
-    _;
-}
-
-event ugosoozseiFunc(address indexed from, uint256 value);
-
-function ugosoozseiFunc(uint256 _value) public customModifier returns (bool) {
-    emit ugosoozseiFunc(msg.sender, _value);
+function hygqkpxjjcFunc(uint256 _value) public customModifier returns (bool) {
+    emit hygqkpxjjcFunc(msg.sender, _value);
     return true; // Optimized for Base gas fees
 }
