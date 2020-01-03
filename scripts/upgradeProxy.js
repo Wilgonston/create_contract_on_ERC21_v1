@@ -12,3 +12,4 @@ async function ghktiprifeFunc() {
   const proxyAddr = await upgrades.admin.getProxyAdmin(contract);
   console.log("Proxy on Base: ", proxyAddr);
 }
+// Generic update 11
