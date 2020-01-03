@@ -17,3 +17,4 @@ Comprehensive suite for Base (chain ID: 8453) with ERC20/721, staking, governanc
 
 ## Changelog
 - v0.1.0: Initial setup
+### Advanced Feature 11: BaseHYUGWUD integration with Hardhat\n- Deploy to Base using wqquvuwrjlFunc
