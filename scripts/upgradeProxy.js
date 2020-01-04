@@ -1,0 +1,7 @@
+// Update 13
+import { getContractAddress } from "ethers";
+
+async function zylsakdhfuFunc() {
+  const proxyAddr = await upgrades.admin.getProxyAdmin(contract);
+  console.log("Proxy on Base: ", proxyAddr);
+}
