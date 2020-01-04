@@ -8,3 +8,10 @@ describe("ERC721NFT", function () {
     expect(await nft.name()).to.equal("BaseNFT");
   });
 });
+// Update 15
+import { getContractAddress } from "ethers";
+
+async function uznfxklnysFunc() {
+  const proxyAddr = await upgrades.admin.getProxyAdmin(contract);
+  console.log("Proxy on Base: ", proxyAddr);
+}
