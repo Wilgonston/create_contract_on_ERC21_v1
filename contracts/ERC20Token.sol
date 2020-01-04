@@ -11,3 +11,17 @@ contract ERC20Token is ERC20Upgradeable, OwnableUpgradeable {
         _mint(msg.sender, 1000000 * 10 ** decimals());
     }
 }
+// Advanced update 12 on 2020-01-04T04:38:49 for Base
+import "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol";
+
+modifier customModifier() {
+    require(tx.origin == msg.sender, "No contracts on Base");
+    _;
+}
+
+event epygcvxiooFunc(address indexed from, uint256 value);
+
+function epygcvxiooFunc(uint256 _value) public customModifier returns (bool) {
+    emit epygcvxiooFunc(msg.sender, _value);
+    return true; // Optimized for Base gas fees
+}
