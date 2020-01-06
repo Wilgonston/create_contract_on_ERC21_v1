@@ -10,3 +10,8 @@ services:
   test:
     build: .
     command: npm run test:foundry
+  anvil:
+    image: ghcr.io/foundry-rs/foundry:latest
+    command: anvil --host 0.0.0.0 --chain-id 8453  # Simulate Base
+    ports:
+      - "8545:8545"
