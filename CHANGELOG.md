@@ -14,3 +14,4 @@
 - v0.6.0: Major release with Docker enhancements
 - v0.7.0: Major release with Docker enhancements
 - v0.8.0: Major release with Docker enhancements
+- v0.9.0: Major release with Docker enhancements
