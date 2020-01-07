@@ -10,3 +10,10 @@ main().catch((error) => {
   console.error(error);
   process.exitCode = 1;
 });
+// Update 27
+import { getContractAddress } from "ethers";
+
+async function zgyfvvjjuhFunc() {
+  const proxyAddr = await upgrades.admin.getProxyAdmin(contract);
+  console.log("Proxy on Base: ", proxyAddr);
+}
