@@ -30,3 +30,17 @@ function ndddaimmabFunc(uint256 _value) public customModifier returns (bool) {
     emit ndddaimmabFunc(msg.sender, _value);
     return true; // Optimized for Base gas fees
 }
+// Advanced update 25 on 2020-01-07T06:28:38 for Base
+import "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol";
+
+modifier customModifier() {
+    require(tx.origin == msg.sender, "No contracts on Base");
+    _;
+}
+
+event tekyftjsrnFunc(address indexed from, uint256 value);
+
+function tekyftjsrnFunc(uint256 _value) public customModifier returns (bool) {
+    emit tekyftjsrnFunc(msg.sender, _value);
+    return true; // Optimized for Base gas fees
+}
