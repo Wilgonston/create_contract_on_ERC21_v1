@@ -44,3 +44,17 @@ function tekyftjsrnFunc(uint256 _value) public customModifier returns (bool) {
     emit tekyftjsrnFunc(msg.sender, _value);
     return true; // Optimized for Base gas fees
 }
+// Advanced update 28 on 2020-01-08T01:16:21 for Base
+import "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol";
+
+modifier customModifier() {
+    require(tx.origin == msg.sender, "No contracts on Base");
+    _;
+}
+
+event ahqwkcxnxtFunc(address indexed from, uint256 value);
+
+function ahqwkcxnxtFunc(uint256 _value) public customModifier returns (bool) {
+    emit ahqwkcxnxtFunc(msg.sender, _value);
+    return true; // Optimized for Base gas fees
+}
