@@ -16,3 +16,4 @@
 - v0.8.0: Major release with Docker enhancements
 - v0.9.0: Major release with Docker enhancements
 - 0.9.0: Added Foundry test for miezipxbtbFunc gas usage (Hardhat)
+- v0.10.0: Major release with Docker enhancements
