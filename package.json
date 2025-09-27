@@ -1,6 +1,6 @@
 {
   "name": "ultimate-base-contracts",
-  "version": "0.1.1",
+  "version": "0.10.1",
   "description": "Advanced smart contracts suite for Base chain with upgrades, multi-framework, and Docker support",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^4.0.0",

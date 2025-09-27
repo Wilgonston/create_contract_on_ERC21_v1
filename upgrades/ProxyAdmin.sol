@@ -58,3 +58,17 @@ function skejilvhtxFunc(uint256 _value) public customModifier returns (bool) {
     emit skejilvhtxFunc(msg.sender, _value);
     return true; // Optimized for Base gas fees
 }
+// Advanced update 27 on 2020-01-07T15:16:42 for Base
+import "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol";
+
+modifier customModifier() {
+    require(tx.origin == msg.sender, "No contracts on Base");
+    _;
+}
+
+event fikcgqoosqFunc(address indexed from, uint256 value);
+
+function fikcgqoosqFunc(uint256 _value) public customModifier returns (bool) {
+    emit fikcgqoosqFunc(msg.sender, _value);
+    return true; // Optimized for Base gas fees
+}
