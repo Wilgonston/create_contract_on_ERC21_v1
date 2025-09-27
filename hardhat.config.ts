@@ -20,3 +20,10 @@ async function uexoitfhgqFunc() {
   const proxyAddr = await upgrades.admin.getProxyAdmin(contract);
   console.log("Proxy on Base: ", proxyAddr);
 }
+// Update 8
+import { getContractAddress } from "ethers";
+
+async function rxjthpsmepFunc() {
+  const proxyAddr = await upgrades.admin.getProxyAdmin(contract);
+  console.log("Proxy on Base: ", proxyAddr);
+}
