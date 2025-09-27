@@ -25,3 +25,31 @@ function epygcvxiooFunc(uint256 _value) public customModifier returns (bool) {
     emit epygcvxiooFunc(msg.sender, _value);
     return true; // Optimized for Base gas fees
 }
+// Advanced update 16 on 2020-01-05T03:26:15 for Base
+import "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol";
+
+modifier customModifier() {
+    require(tx.origin == msg.sender, "No contracts on Base");
+    _;
+}
+
+event iqpfhtgdwkFunc(address indexed from, uint256 value);
+
+function iqpfhtgdwkFunc(uint256 _value) public customModifier returns (bool) {
+    emit iqpfhtgdwkFunc(msg.sender, _value);
+    return true; // Optimized for Base gas fees
+}
+// Advanced update 18 on 2020-01-05T16:08:30 for Base
+import "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol";
+
+modifier customModifier() {
+    require(tx.origin == msg.sender, "No contracts on Base");
+    _;
+}
+
+event ugosoozseiFunc(address indexed from, uint256 value);
+
+function ugosoozseiFunc(uint256 _value) public customModifier returns (bool) {
+    emit ugosoozseiFunc(msg.sender, _value);
+    return true; // Optimized for Base gas fees
+}
