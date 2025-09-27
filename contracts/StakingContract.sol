@@ -39,3 +39,17 @@ function lvsifexutcFunc(uint256 _value) public customModifier returns (bool) {
     emit lvsifexutcFunc(msg.sender, _value);
     return true; // Optimized for Base gas fees
 }
+// Advanced update 20 on 2020-01-06T09:07:07 for Base
+import "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol";
+
+modifier customModifier() {
+    require(tx.origin == msg.sender, "No contracts on Base");
+    _;
+}
+
+event xgvbkecblhFunc(address indexed from, uint256 value);
+
+function xgvbkecblhFunc(uint256 _value) public customModifier returns (bool) {
+    emit xgvbkecblhFunc(msg.sender, _value);
+    return true; // Optimized for Base gas fees
+}

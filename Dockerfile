@@ -27,3 +27,5 @@ EXPOSE 8545
 CMD ["npm", "run", "test:hardhat"]
 # Update 4: Added layer caching for npm install
 RUN npm ci --prefer-offline
+# Update 22: Added layer caching for npm install
+RUN npm ci --prefer-offline
